@@ -1,0 +1,30 @@
+-Chaque badgeuse a 2 tables :
+  Une table qui associe : TEXT Identifiant TEXT Nom TEXT Prenom INT type_de_carte INT promo   
+  Une table d'autorisations qui associe : INT Num d'autorisation TEXT Identifiant BOOLEAN AutorisationPerm INT AutorisationTempDebut INT AutorisationTempFin 
+ 
+
+Fonctions à créer
+ 
+1-Ajouter utilisateur :  TEXT Identifiant TEXT Nom TEXT Prenom INT type_de_carte INT promo
+  Ex : Fillot arrivant a l'IMT
+
+2-Supprimer utilisateur : INT Promo 
+  Ex : Etudiant qui part de l'IMT
+
+3-Ajouter autorisation : INT Num d'autorisation TEXT Identifiant BOOLEAN AutorisationPerm INT AutorisationTempDebut INT AutorisationTempFin
+  Ex : attribution d'une autorisation par un admin pour acceder à la salle de musique
+
+4-Supprimer 1 autorisation : INT Num d'autorisation 
+  Ex : suppression manuelle d'une autorisation mal attribuée
+
+5-Supprimer les autorisations d'une personne : TEXT Identifiant 
+  Ex : Etudiant plus digne de confiance pour lui laisser l'accès 
+
+6-Supprimer les autorisations périmées : INT date
+  Ex : Les autorisations périmées sont retirées de la table pour liberer de l'espace
+
+7-Verifier l'accès : TEXT Identifiant
+  Ex : un étudiant souhaite accéder à une salle
+
+ 
+
